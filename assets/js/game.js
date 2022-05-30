@@ -86,14 +86,8 @@ function fill() {
 
 function tick() {
     sec++;
-    //sposob1
     let s = sec % 60;
     let m = (sec - s) / 60;
-    //sposob2
-    /*if(sec == 60){
-        min++;
-        sec = 0;
-    }*/
     if (s < 10)
         s = '0' + s;
     m = (m < 10) ? ("0" + m) : m;
